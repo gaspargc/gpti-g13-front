@@ -19,3 +19,12 @@ You can deploy your new Vite project with a single command from your terminal us
 ```shell
 $ vercel
 ```
+
+**To install dependencies:**
+```shell
+$ npm install
+```
+**To run the code**
+```shell
+$ npm run dev
+```
