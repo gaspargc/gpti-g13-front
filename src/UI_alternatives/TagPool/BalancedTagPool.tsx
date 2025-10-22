@@ -34,7 +34,7 @@ export const BalancedTagPool: React.FC<BalancedTagPoolProps> = ({
     let currentRow: TagData[] = [];
     let currentWidth = 0;
 
-    tagInfos.forEach((t, i) => {
+    tagInfos.forEach((t, _) => {
       const nextWidth = currentWidth + t.estWidth + (currentRow.length > 0 ? TAG_GAP : 0);
       if (nextWidth <= MAX_WIDTH) {
         currentRow.push(t);
