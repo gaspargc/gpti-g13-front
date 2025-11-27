@@ -20,9 +20,7 @@ interface DishDetailModalProps {
 
 const DishDetailModal: React.FC<DishDetailModalProps> = ({
   dish,
-  dayNumber,
   onClose,
-  onRate,
 }) => {
   const [rating, setRating] = useState<"like" | "dislike" | null>(null);
   const userId = localStorage.getItem("user_id") || "unknown_user";
