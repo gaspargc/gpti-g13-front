@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { X, Send } from "lucide-react";
 
 interface SelectedTag {
+  id: number; 
   label: string;
   color: string;
   secondaryIds: string[];
@@ -15,6 +16,8 @@ interface PromptBarProps {
   onSubmit: () => void;
   onRemoveTag: (tag: SelectedTag) => void;
 }
+
+
 
 export const PromptBar: React.FC<PromptBarProps> = ({
   value,
@@ -39,6 +42,8 @@ export const PromptBar: React.FC<PromptBarProps> = ({
       onSubmit();
     }
   };
+
+
 
   return (
     <div className="w-full bg-white border border-gray-300 rounded-2xl p-3 flex flex-col shadow-sm transition-all max-h-[300px] overflow-y-auto">
