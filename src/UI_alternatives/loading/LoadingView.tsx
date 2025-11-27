@@ -1,13 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-interface Recipe {
-    name: string;
-    tags: string[];
-    ingredients_text: string[];
-    ingredients_ids: { id: number; quantity: number }[];
-    recipe: string[];
-}
 
 interface LoadingViewProps {
   minDuration?: number;

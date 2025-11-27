@@ -1,9 +1,8 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import { ALL_TAGS, TagData } from "./tagData"; 
 import { BalancedTagPool } from "./BalancedTagPool";
 import { PromptBar } from "./PromptBar";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../../components/sidebar";
 
 
 

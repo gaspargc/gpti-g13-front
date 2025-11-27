@@ -1,5 +1,4 @@
 import './App.css'
-import { TagPoolDemoStyled}  from './UI_alternatives/TagPool/TagPoolDemoStyled'
 import { MenuDemoView } from './UI_alternatives/planning/MenuDemoView'
 import LoadingView from './UI_alternatives/loading/LoadingView'
 import { BrowserRouter, Routes, Route } from "react-router-dom";

@@ -1,6 +1,6 @@
 // src/utils/tagSampler.ts
 
-import { TagData, ALL_TAGS } from "./tagData";
+import { TagData } from "./tagData";
 
 /**
  * ⚙️ Parámetros de Configuración para el Muestreo de Tags

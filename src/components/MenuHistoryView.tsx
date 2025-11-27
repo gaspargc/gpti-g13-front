@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { DayCard3 } from "../UI_alternatives/daycards/DayCardPropuesta3";
 import DishDetailModal from "../UI_alternatives/planning/DishDetailModal";
-import { useLocation, Link } from 'react-router-dom';
-import { Pencil } from "lucide-react";
 
 interface DishDetail {
   id: string 

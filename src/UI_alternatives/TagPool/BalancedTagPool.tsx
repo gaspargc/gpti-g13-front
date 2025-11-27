@@ -5,7 +5,7 @@ import { TagData } from "./tagTypes"; // Importa la nueva TagData (id: number)
 import Tag from "./Tag"; // Asumo que este componente existe
 import { getRandomColor } from "./colors"; // Asumo que este helper existe
 // ASUMO que tagSampler.ts está en la misma carpeta, si no, ajusta la ruta
-import { sampleTags, SAMPLER_PARAMS } from "./tagSampler"; 
+import { sampleTags } from "./tagSampler"; 
 
 interface BalancedTagPoolProps {
   allTags: TagData[]; // Cambiado de 'tags' a 'allTags' para mayor claridad

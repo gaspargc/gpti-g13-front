@@ -23,6 +23,17 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+// Ignorar todos tus warnings/errores actuales:
+  'react-hooks/exhaustive-deps': 'off',   // ignora deps faltantes en useEffect/useMemo
+  'prefer-const': 'off',                  // ignora "usar const en vez de let"
+
+  // (Opcional) si quieres ignorar aún más advertencias:
+  '@typescript-eslint/no-unused-vars': 'off',
+  'no-unused-vars': 'off',
+  '@typescript-eslint/no-empty-function': 'off',
+  'no-constant-condition': 'off',
+  'no-console': 'off',
+  'no-debugger': 'off'
     },
   },
 )

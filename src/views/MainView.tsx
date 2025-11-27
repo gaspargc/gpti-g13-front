@@ -1,6 +1,5 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { TagPoolDemoStyled } from "../UI_alternatives/TagPool/TagPoolDemoStyled";
-import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/sidebar";
 import MenuHistoryView from "../components/MenuHistoryView";
 
@@ -79,7 +78,7 @@ const MainView: React.FC = () => {
 
     useEffect(() => {
       fetchMenuHistory(Number(user_id)).then(setHistory);
-      }, []);
+      }, [user_id]);
 
     const dishes: DishDetail[] = selectedMenu
       ? selectedMenu.recipes.map(r => ({
